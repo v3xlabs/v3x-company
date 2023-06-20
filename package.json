@@ -1,0 +1,28 @@
+{
+    "name": "v3x-company",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "start": "pnpm run next-config && next",
+        "dev": "pnpm run next-config && next",
+        "build": "pnpm run next-config && next build",
+        "next-config": "tsc next.config.ts --skipLibCheck --module commonjs --target es2015 --esModuleInterop true --allowSyntheticDefaultImports true --moduleResolution node",
+        "lint": "eslint -c .eslintrc.json --ext .ts ./src"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "next": "^13.4.6"
+    },
+    "devDependencies": {
+        "@types/node": "20.3.1",
+        "@types/react": "18.2.13",
+        "@typescript-eslint/parser": "^5.60.0",
+        "eslint": "^8.43.0",
+        "eslint-plugin-v3xlabs": "^1.6.0",
+        "typescript": "5.1.3"
+    }
+}
