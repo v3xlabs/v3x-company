@@ -5,9 +5,12 @@
     "main": "index.js",
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1",
-        "start": "pnpm run next-config && next",
-        "dev": "pnpm run next-config && next",
-        "build": "pnpm run next-config && next build",
+        "start": "pnpm run configs && next",
+        "dev": "pnpm run configs && next",
+        "build": "pnpm configs && next build",
+        "configs": "pnpm run tailwind-config && pnpm run postcss-config && pnpm run next-config",
+        "postcss-config": "tsc postcss.config.ts --skipLibCheck --module commonjs --target es2015 --esModuleInterop true --allowSyntheticDefaultImports true --moduleResolution node",
+        "tailwind-config": "tsc tailwind.config.ts --skipLibCheck --module commonjs --target es2015 --esModuleInterop true --allowSyntheticDefaultImports true --moduleResolution node",
         "next-config": "tsc next.config.ts --skipLibCheck --module commonjs --target es2015 --esModuleInterop true --allowSyntheticDefaultImports true --moduleResolution node",
         "lint": "eslint -c .eslintrc.json --ext .ts ./src"
     },
@@ -15,7 +18,10 @@
     "author": "",
     "license": "ISC",
     "dependencies": {
-        "next": "^13.4.6"
+        "autoprefixer": "^10.4.14",
+        "next": "^13.4.6",
+        "postcss": "^8.4.24",
+        "tailwindcss": "^3.3.2"
     },
     "devDependencies": {
         "@types/node": "20.3.1",

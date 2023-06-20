@@ -2,3 +2,5 @@ node_modules
 dist
 next.config.js
 .next
+postcss.config.js
+tailwind.config.js
