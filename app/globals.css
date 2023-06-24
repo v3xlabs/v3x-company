@@ -11,3 +11,9 @@
 .font-inter {
     font-family: 'Inter', sans-serif;
 }
+
+.dagrid {
+    grid-template-rows: masonry;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 1rem;
+}
