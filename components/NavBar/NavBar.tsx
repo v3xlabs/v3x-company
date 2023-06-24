@@ -2,7 +2,7 @@ import { FC } from 'react';
 
 export const NavBar: FC = () => {
     return (
-        <header className="w-full p-8 pb-4 pt-6 md:pt-6 md:pb-4 md:px-8 flex justify-between">
+        <header className="w-full p-8 pb-4 pt-6 md:pt-6 md:pb-4 md:px-8 flex justify-between items-start">
             <div className="flex flex-col justify-center">
                 <div className="bg-notblack w-fit font-bold">
                     <span className="text-white -1 mx-3">v3xlabs</span>
