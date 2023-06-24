@@ -21,7 +21,7 @@ export default function App() {
                             <a
                                 href="https://og.ax"
                                 target="_blank"
-                                className="font-bold px-4 py-2 bg-neutral-50 h-fit rounded-md hover:brightness-105 transition-all duration-200 hover:outline outline-[#1e1e1e]"
+                                className="flex items-center gap-2 font-bold px-4 py-2 bg-neutral-50 h-fit rounded-md hover:brightness-105 transition-all duration-200 hover:outline outline-[#1e1e1e]"
                             >
                                 <FiGithub />
                                 <span className="hidden lg:inline">Github</span>
