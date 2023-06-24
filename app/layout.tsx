@@ -3,6 +3,7 @@ import '../public/hack/hack.css';
 
 import React from 'react';
 
+import { Footer } from '../components/Footer/Footer';
 import { NavBar } from '../components/NavBar/NavBar';
 
 export const metadata = {
@@ -20,6 +21,8 @@ export default function RootLayout({
                 <NavBar />
 
                 {children}
+
+                <Footer />
             </body>
         </html>
     );

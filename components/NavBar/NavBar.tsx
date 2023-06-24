@@ -9,8 +9,8 @@ export const NavBar: FC = () => {
                 </div>
                 <div>Empowering open-source</div>
             </div>
-            <div className="flex">
-                <div className="grid grid-rows-3 grid-flow-col gap-x-4">
+            <nav className="flex">
+                <ul className="grid grid-rows-3 grid-flow-col gap-x-4">
                     {[
                         ['.company', 'https://v3x.company'],
                         ['.wiki', 'https://v3x.wiki'],
@@ -19,16 +19,17 @@ export const NavBar: FC = () => {
                         ['.domains', 'https://v3x.domains'],
                         ['.chat', 'https://v3x.chat'],
                     ].map(([label, href]) => (
-                        <a
-                            href={href}
-                            key={label}
-                            className="hover:text-blue-500 hover:underline text-notblack"
-                        >
-                            {label}
-                        </a>
+                        <li key={label}>
+                            <a
+                                href={href}
+                                className="hover:text-blue-500 hover:underline text-notblack"
+                            >
+                                {label}
+                            </a>
+                        </li>
                     ))}
-                </div>
-            </div>
+                </ul>
+            </nav>
         </div>
     );
 };
