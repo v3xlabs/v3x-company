@@ -13,11 +13,12 @@ export const NavBar: FC = () => {
                 <ul className="grid grid-rows-3 grid-flow-col gap-x-4">
                     {[
                         ['.company', 'https://v3x.company'],
-                        ['.wiki', 'https://v3x.wiki'],
-                        ['.health', 'https://v3x.health'],
                         ['.contact', 'https://v3x.contact'],
                         ['.domains', 'https://v3x.domains'],
+                        ['.health', 'https://v3x.health'],
+                        ['.team', 'https://v3x.team'],
                         ['.chat', 'https://v3x.chat'],
+                        ['.wiki', 'https://v3x.wiki'],
                     ].map(([label, href]) => (
                         <li key={label}>
                             <a
