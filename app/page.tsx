@@ -6,7 +6,7 @@ export default function App() {
     return (
         <div className="mx-auto flex items-center justify-center px-4 md:px-8">
             <div className="grid w-full max-w-full dagrid">
-                <div className="relative w-full h-72 lg:h-96 bg-blue-400 col-span-2 lg:col-span-7 row-span-1 lg:row-span-3 rounded-md">
+                <div className="relative w-full h-72 lg:h-auto bg-blue-400 col-span-2 lg:col-span-7 row-span-1 lg:row-span-3 rounded-md">
                     <div className="absolute inset-0 bg-gradient-to-tr from-black/5 to-white/20"></div>
                     <div className="absolute left-8 top-8 right-8 flex justify-between">
                         <div className="grow">
@@ -34,7 +34,7 @@ export default function App() {
                         className="absolute bottom-0 left-0 right-0"
                     />
                 </div>
-                <div className="w-full bg-pink-200 col-span-2 lg:col-span-5 h-32 lg:h-[512px] row-span-1 lg:row-span-2 rounded-md" />
+                <div className="w-full bg-pink-200 col-span-2 lg:col-span-5 h-32 lg:h-[420px] row-span-1 lg:row-span-2 rounded-md" />
                 <div className="w-full bg-gray-200 h-48 col-span-2 lg:col-span-5 row-span-1 rounded-md" />
 
                 <ProjectBox
