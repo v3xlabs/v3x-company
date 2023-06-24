@@ -9,7 +9,7 @@ export const ProjectBox: FC<{
     return (
         <div
             className={`hover:shadow-md rounded-lg overflow-hidden ${
-                className ?? 'col-span-3'
+                className ?? 'col-span-1 lg:col-span-3'
             }`}
         >
             <a href={url} target="_blank" className="w-full h-full">
