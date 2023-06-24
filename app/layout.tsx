@@ -18,7 +18,7 @@ export default function RootLayout({
 }) {
     return (
         <html lang="en">
-            <header>
+            <head>
                 <title>{metadata.title}</title>
                 <meta name="description" content={metadata.description} />
                 <meta property="og:title" content={metadata.title} />
@@ -48,7 +48,7 @@ export default function RootLayout({
                     name="viewport"
                     content="width=device-width, initial-scale=1"
                 />
-            </header>
+            </head>
             <body className="w-full min-h-screen">
                 <NavBar />
 
