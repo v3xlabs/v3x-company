@@ -48,7 +48,7 @@ export default function App() {
                             Edgeserver
                         </h1>
                         <p className="md:text-xl lg:text-2xl xl:text-3xl text-base text-white opacity-80 font-semibold">
-                            Web3 Sites in seconds
+                            Web3 Sites in Seconds
                         </p>
                     </div>
                 </Card>
@@ -90,7 +90,7 @@ export default function App() {
                         </div>
                     </div>
                 </Card>
-                <div className="md:col-span-2 flex flex-col md:grid md:grid-cols-3 gap-1">
+                <div className="md:col-span-2 flex flex-col md:grid md:grid-cols-3 md:grid-rows-4 gap-1">
                     <ProjectBox
                         img="https://github.com/v3xlabs/.github/raw/master/projects/scyllo-small.png#1"
                         url="https://github.com/v3xlabs/scyllo"
@@ -151,7 +151,7 @@ export default function App() {
                         target="_blank"
                         rel="noreferer"
                     >
-                        <div className="flex flex-col justify-center items-center h-full row-span-1 ">
+                        <div className="flex flex-col justify-center items-center h-full row-span-1">
                             Find more on Github
                         </div>
                     </a>
