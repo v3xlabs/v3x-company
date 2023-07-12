@@ -16,10 +16,10 @@ export default function App() {
                             alt="joe"
                         />
                         <div className="absolute font-sans bottom-0 m-4 lg:m-8 gap-y-2">
-                            <h1 className="md:text-5xl lg:text-6xl xl:text-7xl text-3xl font-extrabold text-white">
+                            <h1 className="md:text-4xl lg:text-5xl xl:text-6xl text-3xl font-extrabold text-white">
                                 ENS Cards
                             </h1>
-                            <p className="md:text-3xl lg:text-4xl xl:text-5xl text-base text-white opacity-80 font-semibold">
+                            <p className="md:text-xl lg:text-2xl xl:text-3xl text-base text-white opacity-80 font-semibold">
                                 Magical Custom Swag
                             </p>
                         </div>
