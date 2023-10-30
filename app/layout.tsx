@@ -52,7 +52,7 @@ export default function RootLayout({
                 />
                 <style>
                     @import
-                    url('https://fonts.googleapis.com/css2?family=Flow+Circular&family=Work+Sans:wght@400;500&display=swap');
+                    url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500&display=swap');
                 </style>
             </head>
             <body className="w-full min-h-screen">

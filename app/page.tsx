@@ -1,5 +1,3 @@
-import { FiGithub } from 'react-icons/fi';
-
 import { ProjectBox } from '../components/ProjectBox/ProjectBox';
 
 export default function App() {
@@ -17,16 +15,6 @@ export default function App() {
                                 Swag Printing w Magical Powers
                             </p>
                         </div>
-                        <div className="flex gap-4">
-                            <a
-                                href="https://og.ax"
-                                target="_blank"
-                                className="flex items-center gap-2 font-bold px-4 py-2 bg-neutral-50 h-fit rounded-md hover:brightness-105 transition-all duration-200 hover:outline outline-[#1e1e1e]"
-                            >
-                                <FiGithub />
-                                <span className="hidden lg:inline">Github</span>
-                            </a>
-                        </div>
                     </div>
                     <img
                         src="/cards.svg"
@@ -34,8 +22,19 @@ export default function App() {
                         className="absolute bottom-0 left-0 right-0"
                     />
                 </div>
-                <div className="w-full bg-pink-200 col-span-2 lg:col-span-5 h-32 lg:h-[420px] row-span-1 lg:row-span-2 rounded-md" />
-                <div className="w-full bg-gray-200 h-48 col-span-2 lg:col-span-5 row-span-1 rounded-md" />
+                <div className="text-sm md:text-base row-start-1 col-start-1 w-full bg-white border col-span-2 lg:col-span-5 lg:min-h-[420px] row-span-1 lg:row-span-2 rounded-md p-4 md:p-8">
+                    <h2 className="text-base md:text-2xl">Hey there 👋</h2>
+                    <p className="mt-2">
+                        We are V3X Labs, a community of{' '}
+                        <b>open-source developers</b> driven to{' '}
+                        <b>make a difference</b>.
+                    </p>
+                    <p className="mt-2">
+                        You might know us from some of our <b>projects</b>; such
+                        as ENS Cards, ENS Tools, Scyllo & More
+                    </p>
+                </div>
+                <div className="hidden md:flex w-full bg-gray-200 h-48 col-span-2 lg:col-span-5 row-span-1 rounded-md" />
 
                 <ProjectBox
                     img="https://github.com/v3xlabs/.github/raw/master/projects/ens-tools-small.png#1"
