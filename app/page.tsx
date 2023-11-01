@@ -4,9 +4,8 @@ export default function App() {
     return (
         <div className="mx-auto flex items-center justify-center px-4 md:px-8">
             <div className="grid w-full max-w-full dagrid">
-                <div className="relative w-full h-72 lg:h-auto bg-blue-400 col-span-2 lg:col-span-7 row-span-1 lg:row-span-3 rounded-md">
-                    <div className="absolute inset-0 bg-gradient-to-tr from-black/5 to-white/20"></div>
-                    <div className="absolute left-8 top-8 right-8 flex justify-between">
+                <div className="relative w-full h-72 lg:h-auto bg-blue-400 col-span-2 lg:col-span-7 row-span-1 lg:row-span-3 rounded-3xl overflow-hidden">
+                    <div className="absolute z-10 left-8 top-8 right-8 flex justify-between">
                         <div className="grow">
                             <h2 className="text-2xl lg:text-7xl text-white font-bold font-inter">
                                 ENS Cards
@@ -17,10 +16,11 @@ export default function App() {
                         </div>
                     </div>
                     <img
-                        src="/cards.svg"
+                        src="/sheet/enscards/bg.jpeg"
                         alt=""
-                        className="absolute bottom-0 left-0 right-0"
+                        className="absolute bottom-0 left-0 right-0 select-none"
                     />
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/5 to-white/0"></div>
                 </div>
                 <div className="text-sm md:text-base row-start-1 col-start-1 w-full bg-white border col-span-2 lg:col-span-5 lg:min-h-[420px] row-span-1 lg:row-span-2 rounded-md p-4 md:p-8">
                     <h2 className="text-base md:text-2xl">Hey there 👋</h2>
