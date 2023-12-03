@@ -1,124 +1,118 @@
-import { ProjectBox } from '../components/ProjectBox/ProjectBox';
+import { FaTwitter } from 'react-icons/fa6';
+import { FiBookOpen, FiGithub } from 'react-icons/fi';
+
+const language_to_color = {
+    rust: '#dea584',
+    typescript: '#2b7489',
+};
+
+const language_to_label = {
+    rust: 'Rust',
+    typescript: 'TypeScript',
+};
 
 export default function App() {
     return (
-        <div className="mx-auto flex items-center justify-center px-4 md:px-8">
-            <div className="grid w-full max-w-full dagrid">
-                <div className="relative w-full h-72 lg:h-auto bg-blue-400 col-span-2 lg:col-span-7 row-span-1 lg:row-span-3 rounded-md">
-                    <div className="absolute inset-0 bg-gradient-to-tr from-black/5 to-white/20"></div>
-                    <div className="absolute left-8 top-8 right-8 flex justify-between">
-                        <div className="grow">
-                            <h2 className="text-2xl lg:text-7xl text-white font-bold font-inter">
-                                ENS Cards
-                            </h2>
-                            <p className="text-base lg:text-2xl text-white font-inter">
-                                Swag Printing w Magical Powers
-                            </p>
+        <div className="mx-auto flex flex-col gap-4 items-center justify-center px-4 md:px-8 pt-8">
+            <div className="w-full h-full max-w-3xl border rounded-md prose">
+                <div className="px-6 py-3 flex gap-2">
+                    <h1>V3X Labs</h1>
+                    <span className="text-neutral-400">
+                        - Empowering Opensource
+                    </span>
+                </div>
+            </div>
+            <div className="w-full h-full max-w-3xl border rounded-md prose">
+                <div className="pl-2 border-b flex justify-between">
+                    <div className="border-b-2 px-1 font-bold pt-1.5 pb-1 border-orange-400">
+                        <button className="flex gap-1.5 items-center hover:bg-slate-50 px-1.5 py-1 rounded-md text-sm">
+                            <FiBookOpen />
+                            <span>README</span>
+                        </button>
+                    </div>
+                    <div className="flex p-1 gap-1 w-fit items-center text-sm">
+                        <a
+                            href="https://github.com/v3xlabs"
+                            target="_blank"
+                            className="p-1 hover:bg-slate-100 flex items-center justify-center rounded-md aspect-square w-7 h-7"
+                        >
+                            <FiGithub />
+                        </a>
+                        <a
+                            href="https://twitter.com/v3xlabs"
+                            target="_blank"
+                            className="p-1 hover:bg-slate-100 flex items-center justify-center rounded-md aspect-square w-7 h-7"
+                        >
+                            <FaTwitter />
+                        </a>
+                    </div>
+                </div>
+                <div className="px-6 py-3">
+                    <p>We create epic shit.</p>
+                </div>
+            </div>
+
+            <div className="w-full h-full max-w-3xl border rounded-md prose">
+                {[
+                    {
+                        name: 'v3xlabs/enstate',
+                        description:
+                            'ENS JSON API & Cloudflare Worker written in Rust',
+                        link: 'https://github.com/v3xlabs/enstate',
+                        language: 'rust',
+                    },
+                    {
+                        name: 'ensdomains/ethers-ccip-read-rs',
+                        description: 'Ethers-rs CCIP-Read Middleware',
+                        link: 'https://github.com/ensdomains/ethers-ccip-read',
+                        language: 'rust',
+                    },
+                    {
+                        name: 'v3xlabs/edit-ens-page',
+                        description: 'Edit page for gasless ENS names',
+                        link: 'https://github.com/v3xlabs/edit-ens-page',
+                        language: 'typescript',
+                    },
+                    {
+                        name: 'v3xlabs/scyllo',
+                        description: 'Edit page for gasless ENS names',
+                        link: 'https://github.com/v3xlabs/edit-ens-page',
+                        language: 'typescript',
+                    },
+                    {
+                        name: 'v3xlabs/ens-page',
+                        description: 'ens.page',
+                        link: 'https://github.com/v3xlabs/ens-page',
+                        language: 'typescript',
+                    },
+                ].map((entry) => (
+                    <div
+                        className="px-6 py-4 border-b last:border-b-0"
+                        key={entry.name}
+                    >
+                        <a
+                            href={entry.link}
+                            target="_blank"
+                            className="text-blue-500 font-bold"
+                        >
+                            {entry.name}
+                        </a>
+                        <p>{entry.description}</p>
+                        <div className="flex items-center mt-2 gap-2 text-xs text-neutral-500">
+                            <div className="flex items-center gap-1">
+                                <div
+                                    className="w-3 h-3 rounded-full"
+                                    style={{
+                                        backgroundColor:
+                                            language_to_color[entry.language],
+                                    }}
+                                ></div>
+                                <span>{language_to_label[entry.language]}</span>
+                            </div>
+                            <p className="">Updated 9 hours ago</p>
                         </div>
                     </div>
-                    <img
-                        src="/cards.svg"
-                        alt=""
-                        className="absolute bottom-0 left-0 right-0"
-                    />
-                </div>
-                <div className="text-sm md:text-base row-start-1 col-start-1 w-full bg-white border col-span-2 lg:col-span-5 lg:min-h-[420px] row-span-1 lg:row-span-2 rounded-md p-4 md:p-8">
-                    <h2 className="text-base md:text-2xl">Hey there 👋</h2>
-                    <p className="mt-2">
-                        We are V3X Labs, a community of{' '}
-                        <b>open-source developers</b> driven to{' '}
-                        <b>make a difference</b>.
-                    </p>
-                    <p className="mt-2">
-                        You might know us from some of our <b>projects</b>; such
-                        as ENS Cards, ENS Tools, Scyllo & More
-                    </p>
-                </div>
-                <div className="hidden md:flex w-full bg-gray-200 h-48 col-span-2 lg:col-span-5 row-span-1 rounded-md" />
-
-                <ProjectBox
-                    img="https://github.com/v3xlabs/.github/raw/master/projects/ens-tools-small.png#1"
-                    url="https://github.com/v3xlabs/ens-tools"
-                    title="ENS Tools"
-                    className="col-span-2 lg:col-span-4"
-                />
-                <ProjectBox
-                    img="https://github.com/v3xlabs/.github/raw/master/projects/scyllo-small.png#1"
-                    url="https://github.com/v3xlabs/scyllo"
-                    title="Scyllo"
-                    className="col-span-2 lg:col-span-4"
-                />
-                <ProjectBox
-                    img="https://github.com/v3xlabs/.github/raw/master/projects/edgeserver-small.png#1"
-                    url="https://github.com/v3xlabs/edgeserver"
-                    title="EdgeServer"
-                    className="col-span-2 lg:col-span-4"
-                />
-                <ProjectBox
-                    img="https://github.com/v3xlabs/.github/raw/master/projects/signed-rsvp-small.png#1"
-                    url="https://github.com/v3xlabs/signed-rsvp"
-                    title="Signed RSVP"
-                />
-                <ProjectBox
-                    img="https://github.com/v3xlabs/.github/raw/master/projects/worldname-small.png#1"
-                    url="https://github.com/v3xlabs/worldcoin.name"
-                    title="Worldcoin.name"
-                />
-                <ProjectBox
-                    img="https://github.com/v3xlabs/.github/raw/master/projects/sunflake-small.png#1"
-                    url="https://github.com/v3xlabs/sunflake"
-                    title="Sunflake"
-                />
-                <ProjectBox
-                    img="https://github.com/v3xlabs/.github/raw/master/projects/logger-small.png#1"
-                    url="https://github.com/v3xlabs/logger"
-                    title="Logger"
-                />
-                <ProjectBox
-                    img="https://github.com/v3xlabs/.github/raw/master/projects/redeez-small.png#1"
-                    url="https://github.com/v3xlabs/redeez"
-                    title="Redeez"
-                />
-                <ProjectBox
-                    img="https://github.com/v3xlabs/.github/raw/master/projects/permissio-small.png#1"
-                    url="https://github.com/v3xlabs/permissio"
-                    title="Permissio"
-                />
-                <ProjectBox
-                    img="https://github.com/v3xlabs/.github/raw/master/projects/eslint-small.png#1"
-                    url="https://github.com/v3xlabs/eslint-v3xlabs"
-                    title="ESLint"
-                />
-                <ProjectBox
-                    img="https://github.com/v3xlabs/.github/raw/master/projects/node-fullykiosk-small.png#1"
-                    url="https://github.com/v3xlabs/node-fullykiosk"
-                    title="Node FullyKiosk"
-                />
-                <ProjectBox
-                    img="https://github.com/v3xlabs/.github/raw/master/projects/eth-classify-small.png#1"
-                    url="https://github.com/v3xlabs/eth-classify"
-                    title="ETH Classify"
-                />
-                <ProjectBox
-                    img="https://github.com/v3xlabs/.github/raw/master/projects/cache-fns-small.png#1"
-                    url="https://github.com/v3xlabs/cache-fns"
-                    title="Cache Fns"
-                />
-                <ProjectBox
-                    img="https://github.com/v3xlabs/.github/raw/master/projects/error-fns-small.png#1"
-                    url="https://github.com/v3xlabs/error-fns"
-                    title="Error Fns"
-                />
-                <ProjectBox
-                    img="https://github.com/v3xlabs/.github/raw/master/projects/key-computer-small.png#1"
-                    url="https://key.computer"
-                    title="Key Computer"
-                />
-                <ProjectBox
-                    img="https://github.com/v3xlabs/.github/raw/master/projects/ghchart-small.png#1"
-                    url="https://github.com/v3xlabs/ghchart"
-                    title="Github Chart"
-                />
+                ))}
             </div>
         </div>
     );

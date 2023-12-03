@@ -2,20 +2,21 @@ import { FC } from 'react';
 
 export const NavBar: FC = () => {
     return (
-        <header className="w-full p-4 md:pt-6 md:pb-4 md:px-8 flex justify-between items-start">
-            <div className="flex flex-col justify-center mt-2">
+        <header className="lg:absolute lg:left-0 w-auto p-8 flex flex-col gap-4 max-w-xs">
+            <div className="flex flex-col justify-center whitespace-nowrap">
                 <div className="bg-notblack w-fit font-bold">
                     <span className="text-white -1 mx-3">v3xlabs</span>
                 </div>
                 <div>Empowering open-source</div>
             </div>
-            <nav className="md:flex hidden">
-                <ul className="grid grid-rows-3 grid-flow-col gap-x-4">
+            <nav className="flex">
+                <ul className="">
                     {[
                         ['.company', 'https://v3x.company'],
                         ['.contact', 'https://v3x.contact'],
                         ['.domains', 'https://v3x.domains'],
                         ['.health', 'https://v3x.health'],
+                        ['.store', 'https://v3x.store'],
                         ['.team', 'https://v3x.team'],
                         ['.chat', 'https://v3x.chat'],
                         ['.wiki', 'https://v3x.wiki'],
@@ -23,7 +24,12 @@ export const NavBar: FC = () => {
                         <li key={label}>
                             <a
                                 href={href}
-                                className="hover:text-blue-500 hover:underline text-notblack"
+                                className={[
+                                    'hover:text-blue-500 hover:underline',
+                                    label == '.page'
+                                        ? 'text-blue-500'
+                                        : 'text-notblack',
+                                ].join(' ')}
                             >
                                 {label}
                             </a>
