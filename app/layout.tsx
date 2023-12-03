@@ -50,10 +50,6 @@ export default function RootLayout({
                     name="viewport"
                     content="width=device-width, initial-scale=1"
                 />
-                <style>
-                    @import
-                    url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500&display=swap');
-                </style>
             </head>
             <body className="w-full min-h-screen">
                 <NavBar />

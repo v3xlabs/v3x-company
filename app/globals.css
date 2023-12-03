@@ -3,26 +3,18 @@
 @tailwind utilities;
 
 :root {
-    font-family: 'Hack', monospace;
-    font-size: 18px;
+    /* font-family: 'Hack', monospace; */
+    font-size: 16px;
     @apply text-notblack;
 }
 
-.font-inter {
-    font-family: 'Inter', sans-serif;
+body {
+    @apply bg-white text-notblack dark:bg-notblack dark:text-white;
 }
 
-.dagrid {
-    grid-template-rows: masonry;
-    grid-template-columns: repeat(12, 1fr);
-    gap: 1rem;
-}
-
-@media (max-width: 800px) {
-    .dagrid {
-        grid-auto-rows: repeat(auto-fit, auto);
-        grid-template-columns: repeat(2, auto);
-    }
+header {
+    font-family: 'Hack', monospace;
+    font-size: 18px;
 }
 
 .prose {
@@ -36,5 +28,5 @@
 .prose h2 {
     font-size: 1.2em;
     font-weight: bold;
-    @apply mt-3 mb-1;
+    @apply border-b border-gray-300 pb-1 mt-4 first:mt-0;
 }
