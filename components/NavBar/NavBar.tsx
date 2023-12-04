@@ -23,12 +23,13 @@ export const NavBar: FC = () => {
                     ].map(([label, href]) => (
                         <li key={label}>
                             <a
+                                key={label}
                                 href={href}
                                 className={[
                                     'hover:text-blue-500 hover:underline',
-                                    label == '.page'
-                                        ? 'text-blue-500'
-                                        : 'text-notblack',
+                                    label == '.company'
+                                        ? 'text-blue-500 dark:text-blue-300'
+                                        : 'text-notblack dark:text-white',
                                 ].join(' ')}
                             >
                                 {label}
