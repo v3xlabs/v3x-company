@@ -87,7 +87,7 @@ export const Projects = () => {
                         <a
                             href={entry.link}
                             target="_blank"
-                            className="text-blue-500 font-bold block mb-1"
+                            className="link font-bold block mb-1"
                         >
                             {entry.name}
                         </a>

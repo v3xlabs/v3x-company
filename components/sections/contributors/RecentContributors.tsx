@@ -6,6 +6,7 @@ const contributors_a = [
     'jontes-tech',
     'robiot',
     'prokopschield',
+    'creedscode',
     'm1guelpf',
     'anaarsonist',
     'hattorius',

@@ -11,7 +11,7 @@ export default function App() {
                     <div className="px-6 py-3 flex gap-2">
                         <h1>V3X Labs</h1>
                         <span className="text-neutral-400">
-                            - Empowering Opensource
+                            - Empowering open-source
                         </span>
                     </div>
                 </div>
