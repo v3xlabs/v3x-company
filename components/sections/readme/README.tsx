@@ -6,7 +6,7 @@ export const README = () => {
         <div className="w-full lborder rounded-md prose">
             <div className="pl-2 lborder-b flex justify-between">
                 <div className="border-b-2 px-1 font-bold pt-1.5 pb-1 border-orange-400">
-                    <button className="flex gap-1.5 items-center hover:bg-slate-50 px-1.5 py-1 rounded-md text-sm">
+                    <button className="flex gap-1.5 items-center hover:bg-slate-50 dark:hover:bg-neutral-700 px-1.5 py-1 rounded-md text-sm">
                         <FiBookOpen />
                         <span>README</span>
                     </button>
@@ -15,14 +15,14 @@ export const README = () => {
                     <a
                         href="https://github.com/v3xlabs"
                         target="_blank"
-                        className="p-1 hover:bg-slate-100 flex items-center justify-center rounded-md aspect-square w-7 h-7"
+                        className="p-1 hover:bg-slate-100 dark:hover:bg-neutral-700 flex items-center justify-center rounded-md aspect-square w-7 h-7"
                     >
                         <FiGithub />
                     </a>
                     <a
                         href="https://twitter.com/v3xlabs"
                         target="_blank"
-                        className="p-1 hover:bg-slate-100 flex items-center justify-center rounded-md aspect-square w-7 h-7"
+                        className="p-1 hover:bg-slate-100 dark:hover:bg-neutral-700 flex items-center justify-center rounded-md aspect-square w-7 h-7"
                     >
                         <FaTwitter />
                     </a>
