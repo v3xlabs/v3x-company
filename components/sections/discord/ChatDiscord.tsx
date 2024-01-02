@@ -2,7 +2,7 @@ import { FiExternalLink } from 'react-icons/fi';
 
 export const ChatDiscord = () => {
     return (
-        <div className="w-full border rounded-md p-4 space-y-1">
+        <div className="w-full lborder rounded-md p-4 space-y-1">
             <h2 className="font-bold">
                 Join us on <span className="text-[#8498FB]">Discord</span>
             </h2>

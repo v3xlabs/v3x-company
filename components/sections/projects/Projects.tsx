@@ -82,7 +82,7 @@ export const Projects = () => {
                     type: 'web',
                 },
             ].map((entry) => (
-                <div className="w-full border rounded-md prose">
+                <div className="w-full lborder rounded-md prose">
                     <div className="p-4" key={entry.name}>
                         <a
                             href={entry.link}

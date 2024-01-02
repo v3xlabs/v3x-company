@@ -27,7 +27,7 @@ const contributors_a = [
 
 export const RecentContributors = () => {
     return (
-        <div className="border w-full p-4 rounded-md space-y-2">
+        <div className="lborder w-full p-4 rounded-md space-y-2">
             <h2>Recent Contributors</h2>
             <ul className="flex gap-1 flex-wrap">
                 {contributors_a.map((contributor) => (

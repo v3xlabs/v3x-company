@@ -3,8 +3,8 @@ import { FiBookOpen, FiGithub } from 'react-icons/fi';
 
 export const README = () => {
     return (
-        <div className="w-full border rounded-md prose">
-            <div className="pl-2 border-b flex justify-between">
+        <div className="w-full lborder rounded-md prose">
+            <div className="pl-2 lborder-b flex justify-between">
                 <div className="border-b-2 px-1 font-bold pt-1.5 pb-1 border-orange-400">
                     <button className="flex gap-1.5 items-center hover:bg-slate-50 px-1.5 py-1 rounded-md text-sm">
                         <FiBookOpen />
@@ -79,7 +79,7 @@ export const README = () => {
                     <a
                         href="https://fireeyes.xyz/"
                         target="_blank"
-                        className="p-4 flex items-center justify-center rounded-md bg-white border"
+                        className="p-4 flex items-center justify-center rounded-md bg-white lborder"
                     >
                         <img
                             src="/logos/fireeyes.png"

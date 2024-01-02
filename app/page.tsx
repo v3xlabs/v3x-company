@@ -7,7 +7,7 @@ export default function App() {
     return (
         <div className="mx-auto flex flex-col gap-4 items-center justify-center px-4 md:px-8 pt-8">
             <div className="w-full h-full max-w-4xl space-y-4 font-sans">
-                <div className="border rounded-md prose">
+                <div className="lborder rounded-md prose">
                     <div className="px-6 py-3 flex gap-2">
                         <h1>V3X Labs</h1>
                         <span className="text-neutral-400">
