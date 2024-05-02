@@ -64,6 +64,11 @@ export default function RootLayout({
                     data-domain="v3x.company"
                     src="https://plausible.io/js/script.js"
                 ></script>
+                <script
+                    defer
+                    data-domain="internal.v3x.report"
+                    src="https://plausible.io/js/script.js"
+                ></script>
             </body>
         </html>
     );
