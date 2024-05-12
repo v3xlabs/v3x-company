@@ -11,7 +11,7 @@ export const ChatDiscord = () => {
                 don't look in #vc-text
             </p>
             <a
-                href="https://discord.gg/v3x"
+                href="https://v3x.vc"
                 target="_blank"
                 className="flex w-fit text-center font-bold items-center gap-2 bg-[#8498FB] text-white px-4 ml-auto mt-2 py-2 rounded-md drop-shadow text-sm"
             >
