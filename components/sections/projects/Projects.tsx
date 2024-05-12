@@ -25,6 +25,13 @@ export const Projects = () => {
                     type: 'container',
                 },
                 {
+                    name: 'ensdomains/docs',
+                    description: 'Main documentation site for the ENS protocol',
+                    link: 'https://github.com/ensdomains/docs',
+                    language: 'typescript',
+                    type: 'web',
+                },
+                {
                     name: 'v3xlabs/scyllo',
                     description: 'Moonlander scyllaDB library for typescript',
                     link: 'https://github.com/v3xlabs/scyllo',
