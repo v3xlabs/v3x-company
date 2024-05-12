@@ -17,7 +17,7 @@ export const NavBar: FC = () => {
                         ['.health', 'https://v3x.health'],
                         ['.store', 'https://v3x.store'],
                         ['.team', 'https://v3x.team'],
-                        ['.chat', 'https://v3x.chat'],
+                        // ['.chat', 'https://v3x.chat'],
                         ['.vc', 'https://v3x.vc'],
                     ].map(([label, href]) => (
                         <li key={label}>
