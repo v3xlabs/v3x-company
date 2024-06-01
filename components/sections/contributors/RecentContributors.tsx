@@ -1,9 +1,10 @@
 const contributors_a = [
     'lucemans',
     'svemat01',
+    'jontes-tech',
+    'JustAnotherDevv',
     'antony1060',
     'harryet',
-    'jontes-tech',
     'robiot',
     'prokopschield',
     'creedscode',
