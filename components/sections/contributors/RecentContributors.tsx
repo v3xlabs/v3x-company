@@ -1,11 +1,13 @@
 const fetchContributors = async () => {
-    const response = await fetch("https://raw.githubusercontent.com/v3xlabs/v3x-data/master/team/contributors.json");
+    const response = await fetch(
+        'https://raw.githubusercontent.com/v3xlabs/v3x-data/master/team/contributors.json'
+    );
     const contributors = await response.json();
-    return contributors as {contributors: string[]};
-}
+
+    return contributors as { contributors: string[] };
+};
 
 export const RecentContributors = async () => {
-
     const contributors = await fetchContributors();
 
     return (
