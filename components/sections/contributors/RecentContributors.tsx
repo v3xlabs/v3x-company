@@ -1,41 +1,23 @@
-const contributors_a = [
-    'lucemans',
-    'svemat01',
-    'jontes-tech',
-    'JustAnotherDevv',
-    'antony1060',
-    'harryet',
-    'robiot',
-    'prokopschield',
-    'creedscode',
-    'm1guelpf',
-    'anaarsonist',
-    'hattorius',
-    'thejoshuahendrix',
-    'ItzDerock',
-    'visenp',
-    'imvlan',
-    'loidnoir',
-    'TG-Techie',
-    'M-Desormeaux',
-    'chalkedgoose',
-    '0xEquinox',
-    'KristofKekesi',
-    'milkedcow',
-    'joelimgu',
-    'oguzeray',
-];
+const fetchContributors = async () => {
+    const response = await fetch("https://raw.githubusercontent.com/v3xlabs/v3x-data/master/team/contributors.json");
+    const contributors = await response.json();
+    return contributors as {contributors: string[]};
+}
 
-export const RecentContributors = () => {
+export const RecentContributors = async () => {
+
+    const contributors = await fetchContributors();
+
     return (
         <div className="lborder w-full p-4 rounded-md space-y-2">
             <h2>Recent Contributors</h2>
             <ul className="flex gap-1 flex-wrap">
-                {contributors_a.map((contributor) => (
+                {contributors.contributors.map((contributor) => (
                     <li key={contributor}>
                         <a
                             href={`https://github.com/${contributor}`}
                             target="_blank"
+                            title={contributor}
                         >
                             <img
                                 src={`https://github.com/${contributor}.png`}
