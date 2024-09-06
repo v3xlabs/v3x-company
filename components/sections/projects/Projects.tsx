@@ -17,6 +17,13 @@ export const Projects = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
             {[
                 {
+                    name: 'ensdomains/frensday',
+                    description:
+                        'frENSday is an anual event for the ENS community',
+                    link: 'https://frensday.ens.domains',
+                    type: 'web',
+                },
+                {
                     name: 'v3xlabs/enstate',
                     description:
                         'ENS JSON API & Cloudflare Worker written in Rust',
@@ -100,16 +107,22 @@ export const Projects = () => {
                         </a>
                         <p className="">{entry.description}</p>
                         <div className="flex items-center mt-2 gap-2 text-xs text-neutral-500">
-                            <div className="flex items-center gap-1">
-                                <div
-                                    className="w-3 h-3 rounded-full"
-                                    style={{
-                                        backgroundColor:
-                                            language_to_color[entry.language],
-                                    }}
-                                ></div>
-                                <span>{language_to_label[entry.language]}</span>
-                            </div>
+                            {entry.language && (
+                                <div className="flex items-center gap-1">
+                                    <div
+                                        className="w-3 h-3 rounded-full"
+                                        style={{
+                                            backgroundColor:
+                                                language_to_color[
+                                                    entry.language
+                                                ],
+                                        }}
+                                    ></div>
+                                    <span>
+                                        {language_to_label[entry.language]}
+                                    </span>
+                                </div>
+                            )}
                             {entry.type === 'package' && (
                                 <div className="text-red-700 flex gap-1 items-center">
                                     <SiNpm />
@@ -134,7 +147,6 @@ export const Projects = () => {
                                     <span>Web</span>
                                 </div>
                             )}
-                            <span>Updated 9 hours ago</span>
                         </div>
                     </div>
                 </div>

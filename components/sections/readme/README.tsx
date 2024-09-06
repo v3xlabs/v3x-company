@@ -29,7 +29,7 @@ export const README = () => {
                 </div>
             </div>
             <div className="p-4 pt-3 space-y-2">
-                <div className="border-l-4 py-2 border-yellow-400 text-yellow-400 px-4 bg-yellow-400/10 w-fit italic">
+                {/* <div className="border-l-4 py-2 border-yellow-400 text-yellow-400 px-4 bg-yellow-400/10 w-fit italic">
                     <b>NOTE</b>
                     <br />
                     <span>
@@ -40,14 +40,14 @@ export const README = () => {
                     <span>
                         If this issue persists, try turning it off and on again.
                     </span>
-                </div>
+                </div> */}
                 <h2> What we do</h2>
                 <p>We create epic shit.</p>
                 <p></p>
-                <h2>🙏 Made possible by</h2>
+                <h2>Made possible by</h2>
                 <p>
                     We would not be where we are today without the generous
-                    contributions from
+                    contributions & support from
                 </p>
                 <div className="grid gap-2 grid-cols-1 md:grid-cols-3 xl:w-4/5">
                     <a
@@ -88,10 +88,6 @@ export const README = () => {
                         />
                     </a>
                 </div>
-                <p>
-                    In addition our thanks goes out to all of our contributors &
-                    community.
-                </p>
             </div>
         </div>
     );
