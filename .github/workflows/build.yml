@@ -34,3 +34,12 @@ jobs:
           server: https://api.edgeserver.io
           token: ${{ secrets.SIGNAL_TOKEN }}
           directory: dist
+
+      - name: Edgeserver v0.2 Upload
+        uses: lvkdotsh/edgeserver-action@v0.2.0-pre.8
+        with:
+          site_id: s_3c8272929d
+          server: https://edgeserver.dev/api
+          token: ${{ secrets.EDGE_TOKEN }}
+          directory: dist
+          context: true
