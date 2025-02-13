@@ -28,7 +28,7 @@ jobs:
         run: pnpm build
 
       - name: Edgeserver Upload
-        uses: v3xlabs/edgeserver-action@v0.1.2-pre.4
+        uses: v3xlabs/edgeserver-upload@v0.1.2-pre.4
         with:
           app_id: "194133552038678528"
           server: https://api.edgeserver.io
@@ -36,7 +36,7 @@ jobs:
           directory: dist
 
       - name: Edgeserver v0.2 Upload
-        uses: v3xlabs/edgeserver-action@v0.2.0-pre.8
+        uses: v3xlabs/edgeserver-upload@v0.2.0-pre.8
         with:
           site_id: s_3c8272929d
           server: https://edgeserver.dev/api
