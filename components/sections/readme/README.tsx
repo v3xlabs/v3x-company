@@ -41,7 +41,7 @@ export const README = () => {
                         If this issue persists, try turning it off and on again.
                     </span>
                 </div> */}
-                <h2> What we do</h2>
+                <h2>What we do</h2>
                 <p>We create epic shit.</p>
                 <p></p>
                 <h2>Made possible by</h2>
