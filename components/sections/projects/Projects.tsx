@@ -17,10 +17,20 @@ export const Projects = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
             {[
                 {
-                    name: 'ensdomains/frensday',
+                    name: 'v3xlabs/edgeserver',
                     description:
-                        'frENSday is an anual event for the ENS community',
-                    link: 'https://frensday.ens.domains',
+                        'Next-gen lightweight modern ethical webserver',
+                    link: 'https://github.com/v3xlabs/edgeserver',
+                    language: 'rust',
+                    type: 'container',
+                },
+                {
+                    name: 'v3xlabs/code-fishing',
+                    description:
+                        'A rust (the game) code raiding tool that helps coordinate code raids',
+                    link: 'https://code.fishing',
+                    source: 'https://github.com/v3xlabs/code-fishing',
+                    language: 'rust',
                     type: 'web',
                 },
                 {
@@ -32,10 +42,25 @@ export const Projects = () => {
                     type: 'container',
                 },
                 {
+                    name: 'v3xlabs/mission-control',
+                    description:
+                        'Lightweight Information Display Management Daemon for Home Assistant',
+                    link: 'https://github.com/v3xlabs/mission-control',
+                    language: 'rust',
+                    type: 'container',
+                },
+                {
                     name: 'ensdomains/docs',
                     description: 'Main documentation site for the ENS protocol',
                     link: 'https://github.com/ensdomains/docs',
                     language: 'typescript',
+                    type: 'web',
+                },
+                {
+                    name: 'ensdomains/frensday',
+                    description:
+                        'frENSday is an anual event for the ENS community',
+                    link: 'https://frensday.ens.domains',
                     type: 'web',
                 },
                 {
@@ -97,7 +122,7 @@ export const Projects = () => {
                 },
             ].map((entry) => (
                 <div className="w-full lborder rounded-md prose">
-                    <div className="p-4" key={entry.name}>
+                    <div className="p-4 flex flex-col h-full" key={entry.name}>
                         <a
                             href={entry.link}
                             target="_blank"
@@ -105,7 +130,7 @@ export const Projects = () => {
                         >
                             {entry.name}
                         </a>
-                        <p className="">{entry.description}</p>
+                        <p className="grow">{entry.description}</p>
                         <div className="flex items-center mt-2 gap-2 text-xs text-neutral-500">
                             {entry.language && (
                                 <div className="flex items-center gap-1">
