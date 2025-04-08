@@ -12,12 +12,8 @@ export const NavBar: FC = () => {
             <nav className="flex">
                 <ul className="">
                     {[
-                        ['.company', 'https://v3x.company'],
-                        ['.domains', 'https://v3x.domains'],
-                        ['.health', 'https://v3x.health'],
-                        ['.store', 'https://v3x.store'],
+                        ['.company', '#'],
                         ['.team', 'https://v3x.team'],
-                        // ['.chat', 'https://v3x.chat'],
                         ['.vc', 'https://v3x.vc'],
                     ].map(([label, href]) => (
                         <li key={label}>

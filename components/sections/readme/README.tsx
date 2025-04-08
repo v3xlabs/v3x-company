@@ -44,16 +44,34 @@ export const README = () => {
                 <h2>What we do</h2>
                 <p>We create epic shit.</p>
                 <p></p>
-                <h2>Made possible by</h2>
+                <p></p>
+                <h2>Funding</h2>
+                <p>
+                    v3xlabs is entirely funded off of its contributions to the
+                    open-source ecosystem, collaboration with larger
+                    organizations, and through being the recipient of a variety
+                    of grants.
+                </p>
                 <p>
                     We would not be where we are today without the generous
-                    contributions & support from
+                    contributions & support from the following:
                 </p>
-                <div className="grid gap-2 grid-cols-1 md:grid-cols-3 xl:w-4/5">
+                <div className="grid gap-2 grid-cols-1 md:grid-cols-4 pt-2">
+                    <a
+                        href="https://ethereum.foundation"
+                        target="_blank"
+                        className="p-4 flex items-center justify-center rounded-md bg-white lborder group"
+                    >
+                        <img
+                            src="/logos/ef.svg"
+                            alt="the Ethereum Foundation"
+                            className="h-8 group-hover:scale-105 transition-all duration-300"
+                        />
+                    </a>
                     <a
                         href="https://ens.domains"
                         target="_blank"
-                        className="p-4 flex items-center justify-center rounded-md"
+                        className="p-4 flex items-center justify-center rounded-md group"
                         style={{
                             background:
                                 'linear-gradient(95deg, #8498FB 0.86%, #46BBF0 99.28%)',
@@ -61,30 +79,30 @@ export const README = () => {
                     >
                         <img
                             src="/logos/ens_logo_light.svg"
-                            alt="Ethereum Name Service"
-                            className="h-8"
+                            alt="the Ethereum Name Service"
+                            className="h-8 group-hover:scale-105 transition-all duration-300"
                         />
                     </a>
                     <a
                         href="https://polygon.technology/"
                         target="_blank"
-                        className="p-4 flex items-center justify-center rounded-md bg-[#8247E5]"
+                        className="p-4 flex items-center justify-center rounded-md bg-[#8247E5] group"
                     >
                         <img
                             src="/logos/polygon.png"
                             alt="Polygon"
-                            className="h-6"
+                            className="h-6 group-hover:scale-105 transition-all duration-300"
                         />
                     </a>
                     <a
                         href="https://fireeyes.xyz/"
                         target="_blank"
-                        className="p-4 flex items-center justify-center rounded-md bg-white lborder"
+                        className="p-4 flex items-center justify-center rounded-md bg-white lborder group"
                     >
                         <img
                             src="/logos/fireeyes.png"
                             alt="Fire Eyes"
-                            className="h-4"
+                            className="h-4 group-hover:scale-105 transition-all duration-300"
                         />
                     </a>
                 </div>
