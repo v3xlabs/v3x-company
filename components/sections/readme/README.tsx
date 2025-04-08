@@ -1,4 +1,4 @@
-import { FaTwitter } from 'react-icons/fa';
+import { FaDiscord, FaTwitter } from 'react-icons/fa';
 import { FiBookOpen, FiGithub } from 'react-icons/fi';
 
 export const README = () => {
@@ -18,6 +18,13 @@ export const README = () => {
                         className="p-1 hover:bg-slate-100 dark:hover:bg-neutral-700 flex items-center justify-center rounded-md aspect-square w-7 h-7"
                     >
                         <FiGithub />
+                    </a>
+                    <a
+                        href="https://v3x.vc"
+                        target="_blank"
+                        className="p-1 hover:bg-slate-100 dark:hover:bg-neutral-700 flex items-center justify-center rounded-md aspect-square w-7 h-7"
+                    >
+                        <FaDiscord />
                     </a>
                     <a
                         href="https://twitter.com/v3xlabs"
