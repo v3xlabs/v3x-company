@@ -5,7 +5,7 @@ export const Footer = () => {
         <footer className="w-full flex justify-between p-4 pb-48 max-w-4xl mx-auto">
             <div className="flex gap-2 items-center">
                 <div className="">V3X Labs BV.</div>
-                <div className="text-neutral-400">83898824</div>
+                <div className="text-neutral-400">88564401</div>
             </div>
             <div>
                 <ul className="flex gap-2">
