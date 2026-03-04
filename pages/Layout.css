@@ -3,7 +3,7 @@
 @source "./**/*.tsx";
 
 @theme {
-  --color-notblack: #313131;
+  --color-notblack: #131313;
 }
 
 :root {

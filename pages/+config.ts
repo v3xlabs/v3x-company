@@ -6,12 +6,12 @@ import vikeSolid from "vike-solid/config";
 
 export default {
   // https://vike.dev/head-tags
-  title: "My Vike App",
-  description: "Demo showcasing Vike",
+  title: "V3X Labs",
+  description: "a community of open-source developers driven to make a difference.",
   prerender: {
     noExtraDir: true,
     parallel: false
   },
-
+  port: 5173,
   extends: [vikeSolid],
 } satisfies Config;
