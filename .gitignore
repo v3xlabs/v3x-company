@@ -1,6 +1,12 @@
 node_modules
+.DS_Store
 dist
-next.config.js
-.next
-postcss.config.js
-tailwind.config.js
+dist-ssr
+*.local
+.env
+.nitro
+.tanstack
+.wrangler
+.output
+.vinxi
+__unconfig*

@@ -1,6 +1,5 @@
-import { FaDocker, FaGlobe } from 'react-icons/fa';
-import { GiCargoCrate } from 'react-icons/gi';
-import { SiNpm } from 'react-icons/si';
+import { FaBrandsRust, FaBrandsDocker, FaSolidGlobe } from 'solid-icons/fa';
+import { SiNpm } from 'solid-icons/si';
 
 const language_to_color = {
     rust: '#dea584',
@@ -14,7 +13,7 @@ const language_to_label = {
 
 export const Projects = () => {
     return (
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
             {[
                 {
                     name: 'v3xlabs/edgeserver',
@@ -121,21 +120,21 @@ export const Projects = () => {
                     type: 'web',
                 },
             ].map((entry) => (
-                <div className="w-full lborder rounded-md prose">
-                    <div className="p-4 flex flex-col h-full" key={entry.name}>
+                <div class="w-full lborder rounded-md prose">
+                    <div class="p-4 flex flex-col h-full" key={entry.name}>
                         <a
                             href={entry.link}
                             target="_blank"
-                            className="link font-bold block mb-1"
+                            class="link font-bold block mb-1"
                         >
                             {entry.name}
                         </a>
-                        <p className="grow">{entry.description}</p>
-                        <div className="flex items-center mt-2 gap-2 text-xs text-neutral-500">
+                        <p class="grow">{entry.description}</p>
+                        <div class="flex items-center mt-2 gap-2 text-xs text-neutral-500">
                             {entry.language && (
-                                <div className="flex items-center gap-1">
+                                <div class="flex items-center gap-1">
                                     <div
-                                        className="w-3 h-3 rounded-full"
+                                        class="w-3 h-3 rounded-full"
                                         style={{
                                             backgroundColor:
                                                 language_to_color[
@@ -149,26 +148,26 @@ export const Projects = () => {
                                 </div>
                             )}
                             {entry.type === 'package' && (
-                                <div className="text-red-700 flex gap-1 items-center">
+                                <div class="text-red-700 flex gap-1 items-center">
                                     <SiNpm />
                                     <span>Package</span>
                                 </div>
                             )}
                             {entry.type === 'crate' && (
-                                <div className="text-orange-500 flex gap-1 items-center">
-                                    <GiCargoCrate />
+                                <div class="text-orange-500 flex gap-1 items-center">
+                                    <FaBrandsRust />
                                     <span>Crate</span>
                                 </div>
                             )}
                             {entry.type === 'container' && (
-                                <div className="text-blue-500 flex gap-1 items-center">
-                                    <FaDocker />
+                                <div class="text-blue-500 flex gap-1 items-center">
+                                    <FaBrandsDocker />
                                     <span>Container</span>
                                 </div>
                             )}
                             {entry.type === 'web' && (
-                                <div className="text-cyan-800 flex gap-1 items-center">
-                                    <FaGlobe />
+                                <div class="text-cyan-800 flex gap-1 items-center">
+                                    <FaSolidGlobe />
                                     <span>Web</span>
                                 </div>
                             )}
