@@ -1,26 +1,27 @@
 import { FiExternalLink } from 'solid-icons/fi';
+import { ThemeToggle } from "../ThemeToggle/ThemeToggle";
 import company from "../../content/company.json";
 import social from "../../content/social.json";
 
 export const Footer = () => {
     return (
-        <footer class="w-full flex justify-between p-4 pb-48 max-w-4xl mx-auto">
-            <div class="flex gap-2 items-center">
-                <div class="">{company.companyName}</div>
-                <div class="text-neutral-400">{company.kvk}</div>
-            </div>
-            <div>
-                <ul class="flex gap-2">
-                    <li>
-                        <a
-                            href={social.github}
-                            target="_blank"
-                            class="flex items-center gap-2 text-neutral-400 text-sm"
-                        >
-                            view more <FiExternalLink />
-                        </a>
-                    </li>
-                </ul>
+        <footer class="mx-auto w-full max-w-6xl px-4 pb-12 pt-4 md:max-w-[111rem] sm:px-6">
+            <div class="flex flex-col gap-3 border-t-2 border-notblack pt-5 text-xs text-neutral-600 sm:flex-row sm:items-center sm:justify-between dark:border-white dark:text-neutral-300">
+                <div class="">
+                    <span class="block">{company.companyName}</span>
+                    <span class="text-neutral-500 dark:text-neutral-400">KvK {company.kvk}</span>
+                </div>
+                <div class="flex items-center gap-3">
+                    <ThemeToggle />
+                    <a
+                        href={social.github}
+                        target="_blank"
+                        rel="noreferrer"
+                        class="flex items-center gap-2 text-neutral-500 transition-colors hover:text-notblack dark:text-neutral-400 dark:hover:text-white"
+                    >
+                        view more <FiExternalLink />
+                    </a>
+                </div>
             </div>
         </footer>
     );

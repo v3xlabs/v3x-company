@@ -1,0 +1,14 @@
+{
+  "order": 6,
+  "name": "v3xlabs/ethereum-forum",
+  "description": "An aggregator for all things Ethereum and ACD",
+  "link": "https://ethereum.forum",
+  "source": "https://github.com/v3xlabs/ethereum-forum",
+  "iconLight": "https://raw.githubusercontent.com/v3xlabs/ethereum-forum/master/web/public/favicon.svg",
+  "hoverColor": "#FDF6E3",
+  "hoverTextColor": "#268BD2",
+  "darkHoverColor": "#FDF6E3",
+  "darkHoverTextColor": "#268BD2",
+  "language": "typescript",
+  "type": "web"
+}

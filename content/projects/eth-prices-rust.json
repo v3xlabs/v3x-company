@@ -1,0 +1,13 @@
+{
+  "order": 7,
+  "name": "v3xlabs/eth-prices",
+  "description": "Rust crate for fetching Ethereum asset prices directly from RPC",
+  "link": "https://github.com/v3xlabs/eth-prices",
+  "registry": "https://crates.io/crates/eth-prices",
+  "hoverColor": "#F4DFCF",
+  "hoverTextColor": "#512C14",
+  "darkHoverColor": "#A65F2E",
+  "darkHoverTextColor": "#ffffff",
+  "language": "rust",
+  "type": "crate"
+}

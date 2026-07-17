@@ -8,7 +8,7 @@
     "preview": "vike preview"
   },
   "dependencies": {
-    "@tailwindcss/vite": "^4.1.18",
+    "@tailwindcss/vite": "^4.3.3",
     "@tanstack/router-plugin": "^1.133.21",
     "@tanstack/solid-router": "^1.133.20",
     "@tanstack/solid-router-devtools": "^1.133.20",
@@ -17,7 +17,7 @@
     "nitro": "npm:nitro-nightly@latest",
     "solid-icons": "^1.2.0",
     "solid-js": "^1.9.9",
-    "tailwindcss": "^4.1.18",
+    "tailwindcss": "^4.3.3",
     "vike": "^0.4.255",
     "vike-solid": "^0.8.1",
     "vite-tsconfig-paths": "^5.1.4"

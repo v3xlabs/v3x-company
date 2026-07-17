@@ -1,0 +1,14 @@
+{
+  "order": 1,
+  "name": "v3xlabs/open-lavatory",
+  "description": "Secure peer-to-peer connectivity between dApps and wallets",
+  "link": "https://openlv.rs",
+  "source": "https://github.com/v3xlabs/open-lavatory",
+  "iconLight": "https://raw.githubusercontent.com/v3xlabs/open-lavatory/master/docs/public/icon.svg",
+  "hoverColor": "#FFD9C4",
+  "hoverTextColor": "#4A1B08",
+  "darkHoverColor": "#B8420D",
+  "darkHoverTextColor": "#ffffff",
+  "language": "typescript",
+  "type": "package"
+}

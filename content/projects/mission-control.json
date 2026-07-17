@@ -1,5 +1,5 @@
 {
-  "order": 4,
+  "order": 15,
   "name": "v3xlabs/mission-control",
   "description": "Lightweight Information Display Management Daemon for Home Assistant",
   "link": "https://github.com/v3xlabs/mission-control",

@@ -1,8 +1,9 @@
 {
-  "order": 12,
+  "order": 23,
   "name": "v3xlabs/redeez",
   "description": "A simplified general-purpose queueing library",
   "link": "https://github.com/v3xlabs/redeez",
+  "registry": "https://npmx.dev/package/@v3xlabs/redeez",
   "language": "typescript",
   "type": "package"
 }

@@ -1,8 +1,9 @@
 {
-  "order": 8,
+  "order": 19,
   "name": "ensdomains/ethers-ccip-read-rs",
   "description": "Ethers-rs CCIP-Read Middleware",
   "link": "https://github.com/ensdomains/ethers-ccip-read",
+  "registry": "https://crates.io/crates/ethers-ccip-read",
   "language": "rust",
   "type": "crate"
 }

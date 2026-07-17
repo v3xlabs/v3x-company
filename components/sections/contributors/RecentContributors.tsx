@@ -1,19 +1,22 @@
 import { useData } from "vike-solid/useData";
+import { For } from "solid-js";
 import { Data } from "../../../pages/index/+data";
 
 export const RecentContributors = () => {
     const { contributors } = useData<Data>();
 
     return (
-        <div class="lborder w-full p-4 rounded-md space-y-2">
-            <h2>Recent Contributors</h2>
-            <ul class="flex gap-1 flex-wrap">
-                {contributors.map((contributor) => (
-                    <li key={contributor}>
+        <section class="compact-panel" aria-labelledby="contributors-title">
+            <h2 id="contributors-title">Recent contributors</h2>
+            <ul class="mt-3 flex flex-wrap gap-1.5">
+                <For each={contributors}>{(contributor) => (
+                    <li>
                         <a
                             href={`https://github.com/${contributor}`}
                             target="_blank"
+                            rel="noreferrer"
                             title={contributor}
+                            class="block transition-transform hover:-translate-y-0.5 focus-visible:rounded-full"
                         >
                             <img
                                 src={`https://github.com/${contributor}.png`}
@@ -22,8 +25,8 @@ export const RecentContributors = () => {
                             />
                         </a>
                     </li>
-                ))}
+                )}</For>
             </ul>
-        </div>
+        </section>
     );
 };

@@ -1,8 +1,13 @@
 {
-  "order": 1,
+  "order": 5,
   "name": "v3xlabs/edgeserver",
   "description": "Next-gen lightweight modern ethical webserver",
   "link": "https://github.com/v3xlabs/edgeserver",
+  "iconLight": "https://raw.githubusercontent.com/v3xlabs/edgeserver/master/web/public/favicon.svg",
+  "hoverColor": "#DDEEFF",
+  "hoverTextColor": "#102B45",
+  "darkHoverColor": "#3866A8",
+  "darkHoverTextColor": "#ffffff",
   "language": "rust",
   "type": "container"
 }

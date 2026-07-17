@@ -6,9 +6,9 @@ import type { JSX } from "solid-js";
 
 export default function Layout(props: { children?: JSX.Element }) {
   return (
-    <div>
+    <div class="min-h-screen">
       <NavBar />
-      <div>{props.children}</div>
+      <main>{props.children}</main>
       <Footer />
     </div>
   );

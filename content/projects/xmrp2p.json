@@ -1,0 +1,15 @@
+{
+  "order": 10,
+  "name": "v3xlabs/xmrp2p",
+  "description": "Atomic EVM to XMR peer-to-peer swaps",
+  "link": "https://xmrp2p.eth.limo",
+  "source": "https://github.com/v3xlabs/xmrp2p",
+  "iconLight": "https://raw.githubusercontent.com/v3xlabs/xmrp2p/master/web/public/logo_light.svg",
+  "iconDark": "https://raw.githubusercontent.com/v3xlabs/xmrp2p/master/web/public/logo_dark.svg",
+  "hoverColor": "#FFE0CC",
+  "hoverTextColor": "#4A2000",
+  "darkHoverColor": "#9C3D00",
+  "darkHoverTextColor": "#ffffff",
+  "language": "typescript",
+  "type": "web"
+}

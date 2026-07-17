@@ -1,0 +1,9 @@
+{
+  "order": 4,
+  "name": "v3xlabs/koi",
+  "description": "A local, privacy, and freedom-focused wallet",
+  "link": "https://github.com/v3xlabs/koi",
+  "iconLight": "https://raw.githubusercontent.com/ethereum/kohaku/eabfbed78c5ab0eba9e9af114db1670e53ebeedb/docs/public/kohaku_icon.svg",
+  "language": "rust",
+  "type": "web"
+}

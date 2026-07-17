@@ -2,32 +2,13 @@ import company from "../../content/company.json";
 
 export const NavBar = () => {
     return (
-        <header class="2xl:absolute 2xl:left-0 w-auto p-8 flex flex-col gap-4 max-w-xs">
-            <div class="flex flex-col justify-center whitespace-nowrap">
-                <div class="bg-notblack w-fit font-bold">
-                    <span class="text-white -1 mx-3">{company.shortName}</span>
-                </div>
-                <div>{company.tagline}</div>
+        <header class="mx-auto w-full max-w-6xl px-4 pt-5 md:max-w-[111rem] sm:px-6 sm:pt-7">
+            <div class="flex items-start justify-between">
+                <a href="/" class="flex items-center gap-3 text-sm" aria-label="V3X Labs home">
+                    <h1 class="bg-notblack px-3 py-1 font-bold text-white dark:bg-white dark:text-notblack">{company.shortName}</h1>
+                    <span class="text-xs text-neutral-600 dark:text-neutral-300">{company.tagline}</span>
+                </a>
             </div>
-            <nav class="flex">
-                <ul class="">
-                    {company.navLinks.map((link) => (
-                        <li>
-                            <a
-                                href={link.href}
-                                class={[
-                                    'hover:text-blue-500 hover:underline',
-                                    link.label === '.company'
-                                        ? 'text-blue-500 dark:text-blue-300'
-                                        : 'text-notblack dark:text-white',
-                                ].join(' ')}
-                            >
-                                {link.label}
-                            </a>
-                        </li>
-                    ))}
-                </ul>
-            </nav>
         </header>
     );
 };

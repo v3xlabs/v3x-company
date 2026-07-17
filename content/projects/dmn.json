@@ -1,0 +1,8 @@
+{
+  "order": 12,
+  "name": "v3xlabs/dmn",
+  "description": "A lightweight domain management daemon",
+  "link": "https://github.com/v3xlabs/dmn",
+  "language": "rust",
+  "type": "container"
+}

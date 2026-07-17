@@ -1,0 +1,9 @@
+{
+  "order": 11,
+  "name": "v3xlabs/openapi-hooks",
+  "description": "Type-safe OpenAPI fetch inference with React Query support",
+  "link": "https://github.com/v3xlabs/openapi-hooks",
+  "registry": "https://npmx.dev/package/openapi-hooks",
+  "language": "typescript",
+  "type": "package"
+}

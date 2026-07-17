@@ -1,0 +1,8 @@
+{
+  "order": 9,
+  "name": "v3xlabs/eth-exporter",
+  "description": "Prometheus exporter for Ethereum blockchain data",
+  "link": "https://github.com/v3xlabs/eth-exporter",
+  "language": "rust",
+  "type": "crate"
+}

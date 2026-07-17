@@ -1,0 +1,13 @@
+{
+  "order": 8,
+  "name": "v3xlabs/eth-prices",
+  "description": "TypeScript package for estimating Ethereum asset prices directly from RPC",
+  "link": "https://github.com/v3xlabs/eth-prices",
+  "registry": "https://npmx.dev/package/eth-prices",
+  "hoverColor": "#D8E8F4",
+  "hoverTextColor": "#123B57",
+  "darkHoverColor": "#2B7489",
+  "darkHoverTextColor": "#ffffff",
+  "language": "typescript",
+  "type": "package"
+}

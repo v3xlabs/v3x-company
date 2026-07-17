@@ -1,0 +1,15 @@
+{
+  "order": 2,
+  "name": "v3xlabs/wallet-page",
+  "description": "Interactive documentation and testing playground for Ethereum wallets",
+  "link": "https://wallet.page",
+  "source": "https://github.com/v3xlabs/wallet-page",
+  "iconLight": "https://raw.githubusercontent.com/v3xlabs/wallet-page/master/public/icon_light.svg",
+  "iconDark": "https://raw.githubusercontent.com/v3xlabs/wallet-page/master/public/icon_dark.svg",
+  "hoverColor": "#E3DDFC",
+  "hoverTextColor": "#29134E",
+  "darkHoverColor": "#5B3DA5",
+  "darkHoverTextColor": "#ffffff",
+  "language": "typescript",
+  "type": "web"
+}

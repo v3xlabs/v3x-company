@@ -1,0 +1,10 @@
+{
+  "order": 3,
+  "name": "ethereum/kohaku",
+  "description": "Privacy-first tooling for the Ethereum ecosystem",
+  "link": "https://ethereum.github.io/kohaku/",
+  "source": "https://github.com/ethereum/kohaku",
+  "iconLight": "https://raw.githubusercontent.com/ethereum/kohaku/eabfbed78c5ab0eba9e9af114db1670e53ebeedb/docs/public/kohaku_icon.svg",
+  "language": "typescript",
+  "type": "package"
+}

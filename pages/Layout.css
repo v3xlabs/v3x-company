@@ -1,47 +1,99 @@
 @import "tailwindcss";
 @source "../components/**/*.tsx";
 @source "./**/*.tsx";
+@custom-variant dark {
+  &:where(.dark, .dark *) {
+    @slot;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    :root:not(.light) & {
+      @slot;
+    }
+  }
+}
 
 @theme {
   --color-notblack: #131313;
+  --color-acid: #ff5c35;
+
+  --breakpoint-9xl: 120rem;
 }
 
 :root {
-  /* font-family: 'Hack', monospace; */
   font-size: 16px;
+  font-family: "Hack", ui-monospace, monospace;
   @apply text-notblack;
 }
 
 body {
-  @apply bg-white text-notblack dark:bg-notblack dark:text-white;
+  @apply bg-[#f5f5f3] text-notblack dark:bg-notblack dark:text-white;
 }
 
-header {
-  font-family: 'Hack', monospace;
-  font-size: 18px;
+a {
+  @apply outline-none focus-visible:ring-2 focus-visible:ring-notblack focus-visible:ring-offset-2 dark:focus-visible:ring-white dark:focus-visible:ring-offset-notblack;
 }
 
-.prose {
-  font-size: 16px;
+.panel, .compact-panel {
+  @apply bg-white dark:bg-[#181818];
 }
 
-.prose h1 {
-  font-size: 1em;
+.project-card:hover {
+  background-color: var(--project-hover-color);
+  color: var(--project-hover-text-color);
 }
 
-.prose h2 {
-  font-size: 1.2em;
-  font-weight: bold;
-  @apply border-b border-gray-300 dark:border-neutral-700 pb-1 mt-4 first:mt-0;
+.project-card:hover .project-description,
+.project-card:hover .project-metadata {
+  color: var(--project-hover-text-color);
 }
 
-.link {
-  @apply text-blue-500 hover:text-blue-700 hover:underline;
+.dark .project-card:hover {
+  background-color: var(--project-dark-hover-color);
+  color: var(--project-dark-hover-text-color);
+}
+
+.dark .project-card:hover .project-description,
+.dark .project-card:hover .project-metadata {
+  color: var(--project-dark-hover-text-color);
+}
+
+.panel-bar {
+  @apply flex justify-between border-b border-neutral-300 dark:border-neutral-700;
+}
+
+.panel-tab {
+  @apply bg-notblack px-4 py-1.5 font-bold text-white dark:bg-white dark:text-notblack flex justify-center items-center;
+}
+
+.panel-content {
+  @apply space-y-3 p-5;
+}
+
+.icon-link {
+  @apply flex h-8 w-8 items-center justify-center transition-colors hover:bg-neutral-100 dark:hover:bg-neutral-800;
+}
+
+.compact-panel {
+  @apply min-h-0 p-5;
+}
+
+.compact-panel h2 {
+  @apply text-base font-bold tracking-tight;
+}
+
+.discord-link {
+  @apply mt-5 flex w-fit items-center gap-2 bg-notblack px-4 py-2.5 text-sm font-bold text-white transition-transform hover:-translate-y-0.5 hover:bg-[#5865f2] dark:bg-white dark:text-notblack dark:hover:bg-[#5865f2] dark:hover:text-white;
+}
+
+.project-action {
+  @apply flex h-7 w-7 items-center justify-center border border-transparent text-sm text-notblack transition-colors hover:border-notblack hover:bg-notblack hover:text-white focus-visible:border-notblack focus-visible:bg-notblack focus-visible:text-white dark:text-white dark:hover:border-white dark:hover:bg-white dark:hover:text-notblack dark:focus-visible:border-white dark:focus-visible:bg-white dark:focus-visible:text-notblack;
+}
+
+.theme-toggle {
+  @apply cursor-pointer flex h-7 w-7 items-center justify-center border border-notblack text-sm transition-colors hover:bg-notblack hover:text-white dark:border-white dark:hover:bg-white dark:hover:text-notblack;
 }
 
 .lborder {
-  @apply border border-gray-300 dark:border-neutral-700;
-}
-.lborder-b {
-  @apply border-b border-gray-300 dark:border-neutral-700;
+  @apply border border-neutral-300 dark:border-neutral-700;
 }
