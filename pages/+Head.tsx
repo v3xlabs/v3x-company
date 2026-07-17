@@ -11,14 +11,14 @@ export function Head() {
   return <>
     <title>{metadata.title}</title>
     <meta name="description" content={metadata.description} />
-    <link rel="icon" href="/favicon.png" />
-    <link rel="apple-touch-icon" href="/favicon.png" />
+    <link rel="icon" href="/media/favicon.png" />
+    <link rel="apple-touch-icon" href="/media/favicon.png" />
     <meta property="og:title" content={metadata.title} />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://v3x.company" />
     <meta
       property="og:image"
-      content="/v3x-company-opengraph.png"
+      content="/media/v3x-company-opengraph.png"
     />
     <meta
       property="og:description"
@@ -33,7 +33,7 @@ export function Head() {
     />
     <meta
       property="twitter:image"
-      content="/v3x-company-opengraph.png"
+      content="/media/v3x-company-opengraph.png"
     />
     <meta name="theme-color" content="#ffffff" />
     <meta

@@ -1,33 +1,28 @@
-import { FC } from 'react';
+import company from "../../content/company.json";
 
-export const NavBar: FC = () => {
+export const NavBar = () => {
     return (
-        <header className="2xl:absolute 2xl:left-0 w-auto p-8 flex flex-col gap-4 max-w-xs">
-            <div className="flex flex-col justify-center whitespace-nowrap">
-                <div className="bg-notblack w-fit font-bold">
-                    <span className="text-white -1 mx-3">v3xlabs</span>
+        <header class="2xl:absolute 2xl:left-0 w-auto p-8 flex flex-col gap-4 max-w-xs">
+            <div class="flex flex-col justify-center whitespace-nowrap">
+                <div class="bg-notblack w-fit font-bold">
+                    <span class="text-white -1 mx-3">{company.shortName}</span>
                 </div>
-                <div>Empowering open-source</div>
+                <div>{company.tagline}</div>
             </div>
-            <nav className="flex">
-                <ul className="">
-                    {[
-                        ['.company', '#'],
-                        ['.team', 'https://v3x.team'],
-                        ['.vc', 'https://v3x.vc'],
-                    ].map(([label, href]) => (
-                        <li key={label}>
+            <nav class="flex">
+                <ul class="">
+                    {company.navLinks.map((link) => (
+                        <li>
                             <a
-                                key={label}
-                                href={href}
-                                className={[
+                                href={link.href}
+                                class={[
                                     'hover:text-blue-500 hover:underline',
-                                    label == '.company'
+                                    link.label === '.company'
                                         ? 'text-blue-500 dark:text-blue-300'
                                         : 'text-notblack dark:text-white',
                                 ].join(' ')}
                             >
-                                {label}
+                                {link.label}
                             </a>
                         </li>
                     ))}

@@ -1,0 +1,8 @@
+{
+  "order": 5,
+  "name": "ensdomains/docs",
+  "description": "Main documentation site for the ENS protocol",
+  "link": "https://github.com/ensdomains/docs",
+  "language": "typescript",
+  "type": "web"
+}

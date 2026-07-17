@@ -1,0 +1,143 @@
+
+backend:
+  name: github
+  repo: v3xlabs/v3x-company
+
+media_folder: public/media
+public_folder: /media
+
+app_title: V3X Company CMS
+logo:
+  src: /media/favicon.png
+  show_in_header: true
+
+singletons:
+  - name: company
+    label: Company
+    icon: settings
+    file: content/company.json
+    format: json
+    fields:
+      - name: navLinks
+        label: Navigation Links
+        widget: list
+        summary: '{{label}} -> {{href}}'
+        fields:
+          - name: label
+            label: Label
+            widget: string
+          - name: href
+            label: URL
+            widget: string
+      - name: companyName
+        label: Company Name
+        widget: string
+      - name: shortName
+        label: Short Name
+        widget: string
+      - name: tagline
+        label: Tagline
+        widget: string
+      - name: kvk
+        label: KVK Number
+        widget: string
+
+  - name: social
+    label: Social Links
+    icon: favorite_border
+    file: content/social.json
+    format: json
+    fields:
+      - name: github
+        label: GitHub URL
+        widget: string
+      - name: discord
+        label: Discord URL
+        widget: string
+      - name: twitter
+        label: Twitter URL
+        widget: string
+
+collections:
+  - name: sponsors
+    label: Sponsors
+    label_singular: Sponsor
+    icon: account_balance
+    folder: content/sponsors
+    format: json
+    create: true
+    delete: true
+    identifier_field: name
+    slug: '{{slug}}'
+    summary: '{{name}}'
+    fields:
+      - name: order
+        label: Order
+        widget: number
+        value_type: int
+        min: 1
+      - name: name
+        label: Name
+        widget: string
+      - name: url
+        label: Website
+        widget: string
+      - name: logo
+        label: Logo
+        widget: image
+      - name: containerClass
+        label: Container CSS class
+        widget: string
+      - name: containerStyle
+        label: Container CSS style
+        widget: text
+        required: false
+      - name: imageClass
+        label: Image CSS class
+        widget: string
+
+  - name: projects
+    label: Projects
+    label_singular: Project
+    icon: code
+    folder: content/projects
+    format: json
+    create: true
+    delete: true
+    identifier_field: name
+    slug: '{{slug}}'
+    summary: '{{name}}'
+    fields:
+      - name: order
+        label: Order
+        widget: number
+        value_type: int
+        min: 1
+      - name: name
+        label: Name
+        widget: string
+      - name: description
+        label: Description
+        widget: text
+      - name: link
+        label: Link
+        widget: string
+      - name: source
+        label: Source URL
+        widget: string
+        required: false
+      - name: language
+        label: Language
+        widget: select
+        required: false
+        options:
+          - { label: "Rust", value: "rust" }
+          - { label: "TypeScript", value: "typescript" }
+      - name: type
+        label: Type
+        widget: select
+        options:
+          - { label: "Container", value: "container" }
+          - { label: "Web", value: "web" }
+          - { label: "Package", value: "package" }
+          - { label: "Crate", value: "crate" }

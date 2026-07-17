@@ -1,0 +1,8 @@
+{
+  "order": 3,
+  "name": "v3xlabs/enstate",
+  "description": "ENS JSON API & Cloudflare Worker written in Rust",
+  "link": "https://github.com/v3xlabs/enstate",
+  "language": "rust",
+  "type": "container"
+}

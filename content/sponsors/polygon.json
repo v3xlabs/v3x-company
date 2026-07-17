@@ -1,0 +1,8 @@
+{
+  "order": 3,
+  "name": "Polygon",
+  "url": "https://polygon.technology/",
+  "logo": "/media/logos/polygon.png",
+  "containerClass": "p-4 flex items-center justify-center rounded-md bg-[#8247E5] group",
+  "imageClass": "h-6 group-hover:scale-105 transition-all duration-300"
+}

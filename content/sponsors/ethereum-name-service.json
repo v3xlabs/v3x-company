@@ -1,0 +1,9 @@
+{
+  "order": 2,
+  "name": "Ethereum Name Service",
+  "url": "https://ens.domains",
+  "logo": "/media/logos/ens_logo_light.svg",
+  "containerClass": "p-4 flex items-center justify-center rounded-md group",
+  "containerStyle": "background: linear-gradient(95deg, #8498FB 0.86%, #46BBF0 99.28%)",
+  "imageClass": "h-8 group-hover:scale-105 transition-all duration-300"
+}

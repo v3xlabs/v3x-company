@@ -1,0 +1,8 @@
+{
+  "order": 10,
+  "name": "v3xlabs/logger",
+  "description": "Logging library. prev @lvksh/logger",
+  "link": "https://github.com/v3xlabs/logger",
+  "language": "typescript",
+  "type": "package"
+}

@@ -1,0 +1,8 @@
+{
+  "order": 4,
+  "name": "v3xlabs/mission-control",
+  "description": "Lightweight Information Display Management Daemon for Home Assistant",
+  "link": "https://github.com/v3xlabs/mission-control",
+  "language": "rust",
+  "type": "container"
+}

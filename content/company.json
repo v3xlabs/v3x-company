@@ -1,0 +1,17 @@
+{
+  "companyName": "V3X Labs BV.",
+  "shortName": "v3xlabs",
+  "tagline": "Empowering open-source",
+  "kvk": "88564401",
+  "phone": "",
+  "email": "",
+  "address": "",
+  "postalCity": "",
+  "whatsappNumber": "",
+  "openingHours": "",
+  "navLinks": [
+    { "label": ".company", "href": "#" },
+    { "label": ".team", "href": "https://v3x.team" },
+    { "label": ".vc", "href": "https://v3x.vc" }
+  ]
+}

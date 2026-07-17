@@ -1,0 +1,8 @@
+{
+  "order": 1,
+  "name": "Ethereum Foundation",
+  "url": "https://ethereum.foundation",
+  "logo": "/media/logos/ef.svg",
+  "containerClass": "p-4 flex items-center justify-center rounded-md bg-white lborder group",
+  "imageClass": "h-8 group-hover:scale-105 transition-all duration-300"
+}

@@ -1,0 +1,8 @@
+{
+  "order": 13,
+  "name": "v3xlabs/edit-ens-page",
+  "description": "Edit page for gasless ENS names",
+  "link": "https://github.com/v3xlabs/edit-ens-page",
+  "language": "typescript",
+  "type": "web"
+}

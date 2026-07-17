@@ -1,0 +1,9 @@
+{
+  "order": 2,
+  "name": "v3xlabs/code-fishing",
+  "description": "A rust (the game) code raiding tool that helps coordinate code raids",
+  "link": "https://code.fishing",
+  "source": "https://github.com/v3xlabs/code-fishing",
+  "language": "rust",
+  "type": "web"
+}

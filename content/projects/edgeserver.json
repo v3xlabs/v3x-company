@@ -1,0 +1,8 @@
+{
+  "order": 1,
+  "name": "v3xlabs/edgeserver",
+  "description": "Next-gen lightweight modern ethical webserver",
+  "link": "https://github.com/v3xlabs/edgeserver",
+  "language": "rust",
+  "type": "container"
+}

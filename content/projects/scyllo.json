@@ -1,0 +1,8 @@
+{
+  "order": 7,
+  "name": "v3xlabs/scyllo",
+  "description": "Moonlander scyllaDB library for typescript",
+  "link": "https://github.com/v3xlabs/scyllo",
+  "language": "typescript",
+  "type": "package"
+}
