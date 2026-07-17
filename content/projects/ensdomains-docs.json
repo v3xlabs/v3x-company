@@ -3,6 +3,10 @@
   "name": "ensdomains/docs",
   "description": "Main documentation site for the ENS protocol",
   "link": "https://github.com/ensdomains/docs",
+  "hoverColor": "#E1EBFF",
+  "hoverTextColor": "#103B85",
+  "darkHoverColor": "#3889FF",
+  "darkHoverTextColor": "#ffffff",
   "language": "typescript",
   "type": "web"
 }

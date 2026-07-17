@@ -5,6 +5,10 @@
   "link": "https://ethereum.github.io/kohaku/",
   "source": "https://github.com/ethereum/kohaku",
   "iconLight": "https://raw.githubusercontent.com/ethereum/kohaku/eabfbed78c5ab0eba9e9af114db1670e53ebeedb/docs/public/kohaku_icon.svg",
+  "hoverColor": "#F9D2D0",
+  "hoverTextColor": "#032839",
+  "darkHoverColor": "#971510",
+  "darkHoverTextColor": "#F9F6E9",
   "language": "typescript",
   "type": "package"
 }

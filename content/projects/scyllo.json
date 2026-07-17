@@ -3,6 +3,10 @@
   "name": "v3xlabs/scyllo",
   "description": "Moonlander scyllaDB library for typescript",
   "link": "https://github.com/v3xlabs/scyllo",
+  "hoverColor": "#DDF3FF",
+  "hoverTextColor": "#0E3E5C",
+  "darkHoverColor": "#1E7FB4",
+  "darkHoverTextColor": "#ffffff",
   "language": "typescript",
   "type": "package"
 }

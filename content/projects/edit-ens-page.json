@@ -3,6 +3,10 @@
   "name": "v3xlabs/edit-ens-page",
   "description": "Edit page for gasless ENS names",
   "link": "https://github.com/v3xlabs/edit-ens-page",
+  "hoverColor": "#E1EBFF",
+  "hoverTextColor": "#103B85",
+  "darkHoverColor": "#3889FF",
+  "darkHoverTextColor": "#ffffff",
   "language": "typescript",
   "type": "web"
 }

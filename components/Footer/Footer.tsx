@@ -6,7 +6,7 @@ import social from "../../content/social.json";
 export const Footer = () => {
     return (
         <footer class="mx-auto w-full max-w-6xl px-4 pb-12 pt-4 md:max-w-[111rem] sm:px-6">
-            <div class="flex flex-col gap-3 border-t-2 border-notblack pt-5 text-xs text-neutral-600 sm:flex-row sm:items-center sm:justify-between dark:border-white dark:text-neutral-300">
+            <div class="flex flex-col gap-3 text-xs text-neutral-600 sm:flex-row sm:items-center sm:justify-between dark:text-neutral-300">
                 <div class="">
                     <span class="block">{company.companyName}</span>
                     <span class="text-neutral-500 dark:text-neutral-400">KvK {company.kvk}</span>

@@ -4,6 +4,10 @@
   "description": "A simplified general-purpose queueing library",
   "link": "https://github.com/v3xlabs/redeez",
   "registry": "https://npmx.dev/package/@v3xlabs/redeez",
+  "hoverColor": "#FFE0E0",
+  "hoverTextColor": "#651919",
+  "darkHoverColor": "#AD3030",
+  "darkHoverTextColor": "#ffffff",
   "language": "typescript",
   "type": "package"
 }

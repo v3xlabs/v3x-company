@@ -3,6 +3,10 @@
   "name": "v3xlabs/ens-tools",
   "description": "All your bits and bobs for ENS",
   "link": "https://github.com/v3xlabs/ens-tools",
+  "hoverColor": "#E1EBFF",
+  "hoverTextColor": "#103B85",
+  "darkHoverColor": "#3889FF",
+  "darkHoverTextColor": "#ffffff",
   "language": "typescript",
   "type": "package"
 }

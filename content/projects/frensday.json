@@ -3,5 +3,9 @@
   "name": "ensdomains/frensday",
   "description": "frENSday is an anual event for the ENS community",
   "link": "https://frensday.ens.domains",
+  "hoverColor": "#E1EBFF",
+  "hoverTextColor": "#103B85",
+  "darkHoverColor": "#3889FF",
+  "darkHoverTextColor": "#ffffff",
   "type": "web"
 }

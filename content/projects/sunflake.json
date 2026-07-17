@@ -3,6 +3,10 @@
   "name": "v3xlabs/sunflake",
   "description": "Lightweight Snowflake IDs",
   "link": "https://github.com/v3xlabs/sunflake",
+  "hoverColor": "#FFF1B8",
+  "hoverTextColor": "#5E4200",
+  "darkHoverColor": "#A87400",
+  "darkHoverTextColor": "#ffffff",
   "language": "typescript",
   "type": "package"
 }
