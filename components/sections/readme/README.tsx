@@ -16,7 +16,7 @@ const sponsors = Object.values(sponsorModules).map(mod => mod.default).sort((a, 
 
 export const README = () => {
     return (
-        <section class="panel prose lg:col-span-8 border-notblack dark:border-white" aria-labelledby="readme-title">
+        <section class="panel prose lg:col-span-8" aria-labelledby="readme-title">
             <div class="panel-bar">
                 <div class="panel-tab">
                     <div class="flex gap-1.5 items-center text-sm">

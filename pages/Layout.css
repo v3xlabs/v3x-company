@@ -63,7 +63,7 @@ a {
 }
 
 .panel-tab {
-  @apply bg-notblack px-4 py-1.5 font-bold text-white dark:bg-white dark:text-notblack flex justify-center items-center;
+  @apply px-4 py-1.5 font-bold flex justify-center items-center;
 }
 
 .panel-content {
