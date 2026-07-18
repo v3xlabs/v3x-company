@@ -1,7 +1,7 @@
 {
-  "order": 24,
+  "order": 23,
   "name": "v3xlabs/edit-ens-page",
-  "description": "Edit page for gasless ENS names",
+  "description": "Edit page for ENS names",
   "link": "https://github.com/v3xlabs/edit-ens-page",
   "hoverColor": "#E1EBFF",
   "hoverTextColor": "#103B85",
