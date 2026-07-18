@@ -2,7 +2,7 @@
   "order": 1,
   "name": "v3xlabs/open-lavatory",
   "description": "Secure peer-to-peer connectivity between dApps and wallets",
-  "link": "https://openlv.rs",
+  "link": "https://openlv.sh",
   "source": "https://github.com/v3xlabs/open-lavatory",
   "iconLight": "https://raw.githubusercontent.com/v3xlabs/open-lavatory/master/docs/public/icon.svg",
   "hoverColor": "#FFD9C4",
